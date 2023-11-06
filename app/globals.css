@@ -5,3 +5,16 @@
 body {
     @apply bg-zinc-900 text-white;
 }
+
+::-webkit-scrollbar {
+    width: .3rem;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-zinc-900;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-black;
+}
+  
