@@ -3,7 +3,7 @@ import ListShortcuts from "./component/listShortcuts";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="bg-black">
       <Container isSection className="flex justify-around">
         <ListShortcuts
           options={[{ name: "teste" }, { name: "teste" }, { name: "teste" }]}

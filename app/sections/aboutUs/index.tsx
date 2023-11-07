@@ -1,24 +1,35 @@
 import Example from "@/app/assets/toninhoExemple.jpeg";
-import SubSection from "./components/subSection";
+import Section from "@/shared/components/templates/section";
+import SubSection from "../../../shared/components/molecules/subSection";
 
 export default function AboutUs() {
   return (
-    <section className="flex flex-col gap-20 p-10" id="aboutUs">
+    <Section id="aboutUs">
       <SubSection
         image={Example}
         title="Lorem ipsum dolor"
         description={
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corporis sit, aperiam error, ipsam illum maiores aliquid facere quisquam impedit consequatur optio magnam totam deserunt quia aspernatur quod? Iusto, ipsum."
+          <p className="py-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+            corporis sit, aperiam error, ipsam illum maiores aliquid facere
+            quisquam impedit consequatur optio magnam totam deserunt quia
+            aspernatur quod? Iusto, ipsum.
+          </p>
         }
       />
       <SubSection
         image={Example}
         title="Lorem ipsum dolor"
         description={
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni corporis sit, aperiam error, ipsam illum maiores aliquid facere quisquam impedit consequatur optio magnam totam deserunt quia aspernatur quod? Iusto, ipsum."
+          <p className="py-5">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni
+            corporis sit, aperiam error, ipsam illum maiores aliquid facere
+            quisquam impedit consequatur optio magnam totam deserunt quia
+            aspernatur quod? Iusto, ipsum.
+          </p>
         }
         reverse
       />
-    </section>
+    </Section>
   );
 }

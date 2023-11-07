@@ -19,7 +19,7 @@ export default function Sidebar() {
         fixed
         right-0 top-0
         ${sideBarIsOpen ? "w-2/12" : "w-10"} h-screen
-        bg-zinc-900
+        bg-zinc-950
         z-20
     `}
       id="sidebar"
